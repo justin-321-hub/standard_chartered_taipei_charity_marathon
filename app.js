@@ -147,8 +147,11 @@ elInput.addEventListener('keydown', (e) => {
 messages.push({
   id: uid(),
   role: 'assistant',
-  text: `您好！這是您的對話會話（#${clientId.slice(-6)}）。請用文字提問，我會幫您查詢資料庫。`,
+  text: `歡迎來到渣打馬拉松智慧客服！
+無論您是第一次參賽的新手，還是追求突破的資深跑者，這裡都有您需要的資訊與貼心建議。
+從報名、訓練、裝備選擇，到比賽當天的實用小貼士與恢復方法，我們都會用最專業的知識，陪伴您一路向前，衝向終點！`,
   ts: Date.now()
 });
 render();
+
 
