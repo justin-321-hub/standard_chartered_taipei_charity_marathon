@@ -58,8 +58,8 @@ function render() {
     const avatar = document.createElement('img');
     avatar.className = 'avatar';
     avatar.src = isUser
-      ? 'https://raw.githubusercontent.com/justin-321-hub/fourleaf/refs/heads/main/assets/user-avatar.png'
-      : 'https://raw.githubusercontent.com/justin-321-hub/fourleaf/refs/heads/main/assets/bot-avatar.png';
+      ? 'https://raw.githubusercontent.com/justin-321-hub/standard_chartered_taipei_charity_marathon/refs/heads/main/assets/user.png'
+      : 'https://raw.githubusercontent.com/justin-321-hub/standard_chartered_taipei_charity_marathon/refs/heads/main/assets/bot.png';
     avatar.alt = isUser ? 'you' : 'bot';
 
     // 泡泡
@@ -153,5 +153,6 @@ messages.push({
   ts: Date.now()
 });
 render();
+
 
 
