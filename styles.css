@@ -49,7 +49,7 @@ body {
 .logo {
   height: 36px;          /* 固定高度 */
   width: auto;           /* 寬度自動，維持比例 */
-  max-width: 67px;       /* 你原先想要的大致寬度上限 */
+  /*max-width: 67px;       /* 你原先想要的大致寬度上限 */
   border-radius: 6px;
   display: block;
   object-fit: contain;   /* 避免裁切，保持比例 */
@@ -168,5 +168,6 @@ body {
   .bubble { max-width: 86%; }
   .messages { padding: 12px; }
 }
+
 
 
