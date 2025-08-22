@@ -145,7 +145,7 @@ async function sendText(text) {
         "Content-Type": "application/json",
         "X-Client-Id": clientId,
       },
-      body: JSON.stringify({ text: content, clientId }),
+      body: JSON.stringify({ text: content, clientId , language: "繁體中文"}),
     });
 
     // 以文字讀回（避免直接 .json() 遇到空字串拋錯）
@@ -252,4 +252,5 @@ messages.push({
   ts: Date.now(),
 });
 render();
+
 
