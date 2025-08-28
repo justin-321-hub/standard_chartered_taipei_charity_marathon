@@ -162,6 +162,11 @@ async function sendText(text) {
 
     // HTTP 狀態非 2xx 時，直接丟錯
     if (!res.ok) {
+      // ★ 新增：特別處理 502 / 404
+      if (res.status === 502 || res.status === 404) {
+        throw new Error("網路不穩定，請再試一次!");
+      }
+
       // 優先使用後端提供的錯誤訊息欄位
       const serverMsg =
         (data && (data.error || data.body || data.message)) ?? raw ?? "unknown error";
@@ -252,5 +257,6 @@ messages.push({
   ts: Date.now(),
 });
 render();
+
 
 
