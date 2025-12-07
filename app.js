@@ -338,7 +338,8 @@ async function sendText(text) {
       body: JSON.stringify({ 
         text: content, 
         clientId, 
-        language: "繁體中文" 
+        language: "繁體中文",
+        role:"user"
       }),
     });
 
@@ -399,3 +400,4 @@ messages.push({
   isHtml: true
 });
 render();
+
