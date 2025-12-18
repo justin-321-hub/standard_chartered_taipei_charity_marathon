@@ -354,7 +354,10 @@ window.addEventListener("load", () => elInput?.focus());
 messages.push({
   id: uid(),
   role: "assistant",
-  text: "Hi，我是 **Sky**，我喜歡跑步，熱心公益又充滿正能量，對賽事的各個環節瞭如指掌，希望能以我的專業滿足您的服務需求。\n\n如果有關於**渣打臺北公益馬拉松**的大小事，歡迎詢問我！",
+  text: "<p>Hi，我是 <strong>Sky</strong>。</p>
+    <p>我喜歡跑步，熱心公益又充滿正能量，對賽事的各個環節瞭如指掌，希望能以我的專業滿足您的服務需求。</p>
+    <p>如果有關於<strong>渣打臺北公益馬拉松</strong>的大小事，歡迎詢問我！</p>",
   ts: Date.now(),
 });
 render();
+
