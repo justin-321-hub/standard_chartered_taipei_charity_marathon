@@ -106,7 +106,7 @@ function render() {
     const avatar = document.createElement("img");
     avatar.className = "avatar";
     avatar.src = isUser
-      ? "https://raw.githubusercontent.com/justin-321-hub/standard_chartered_taipei_charity_marathon/refs/heads/main/assets/user.png"
+      ? "https://raw.githubusercontent.com/justin-321-hub/standard_chartered_taipei_charity_marathon/refs/heads/main/assets/20251224_logo.jpg"
       : "https://raw.githubusercontent.com/justin-321-hub/standard_chartered_taipei_charity_marathon/refs/heads/main/assets/S__53714948.png";
     avatar.alt = isUser ? "you" : "bot";
 
@@ -354,9 +354,10 @@ window.addEventListener("load", () => elInput?.focus());
 messages.push({
   id: uid(),
   role: "assistant",
-  text: "<p>Hi，我是 <strong>Sky</strong>。</p><p>我喜歡跑步，熱心公益又充滿正能量，對賽事的各個環節瞭如指掌，希望能以我的專業滿足您的服務需求。</p><p>如果有關於<strong>渣打臺北公益馬拉松</strong>的大小事，歡迎詢問我！</p>",
+  text: "<p>親愛的跑者您好!</p><p>我是<strong>渣打馬拉松</strong>線上客服小幫手，需要查詢甚麼資訊呢?</p><p>歡迎提問哦！</p>",
   ts: Date.now(),
 });
 render();
+
 
 
