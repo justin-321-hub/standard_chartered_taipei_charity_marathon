@@ -354,10 +354,11 @@ window.addEventListener("load", () => elInput?.focus());
 messages.push({
   id: uid(),
   role: "assistant",
-  text: "<p>親愛的跑者您好!</p><p>我是<strong>渣打馬拉松</strong>線上客服小幫手，需要查詢甚麼資訊呢?</p><p>歡迎提問哦！</p>",
+  text: "<p>親愛的跑者您好!</p><p>我是<strong>101垂直馬拉松</strong>線上客服小幫手，需要查詢甚麼資訊呢?</p><p>歡迎提問哦！</p>",
   ts: Date.now(),
 });
 render();
+
 
 
 
